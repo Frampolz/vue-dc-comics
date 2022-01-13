@@ -41,7 +41,7 @@ img {
     padding: 1em;
 }
 ul {
-    list-style-type: none;
+    
     li {
         display: inline-block;
         padding: 1em;
