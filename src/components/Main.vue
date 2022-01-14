@@ -1,13 +1,13 @@
 <template>
 <main>
+    <div class="jumbotron">
+        <img src="../assets/img/jumbotron.jpg" alt="">
+  </div>
     <div class="container">
-      <div class="jumbotron d-flex">
-         <p>content goes here</p>
+        <Cardmain />
       </div>
       
-          <Cardmain />
       
-  </div>
   <div class="main-link">
       <ul class="d-flex">
           <li><a href="">
@@ -43,9 +43,11 @@
 <script>
 import Cardmain from './Cardmain.vue';
 
+
 export default {
 components: {
-    Cardmain
+    Cardmain,
+    
 
 }
 }
@@ -57,9 +59,9 @@ main {
     background-color: $mainBgColor;
 
         .jumbotron {
-            padding: 1.5em;
-            color: white;
-            font-size: 2em;
+            height: 400px;
+            overflow: hidden;
+            
         }
         
         .main-link {

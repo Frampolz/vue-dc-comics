@@ -1,6 +1,5 @@
 <template>
   <div class="card-container d-flex">
-    <div class="card-thumbs">
       <Card
         v-for="(card, index) in cards"
         :key="index"
@@ -8,7 +7,7 @@
         :alt="card.series"
         :titolo="card.series"
       />
-    </div>
+    
     <div class="button"><a href="#">load more</a></div>
   </div>
 </template>
@@ -115,7 +114,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import "../assets/scss/partials/_variables.scss";
 .card-container {
   flex-wrap: wrap;
   gap: 2em;
@@ -124,17 +124,18 @@ export default {
   .card-thumbs {
     flex-basis: calc((100% / 6) - 2em);
 
-    img {
-    }
-
-    h3 {
-      margin-top: 0.5em;
-      font-weight: normal;
-      color: white;
-    }
   }
   .button {
     margin: 0 auto;
+    background-color: $blueColor;
+    padding: 0.5em 3em;
+    margin-top: 1em;
+    a {
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.7;
+    }
   }
 }
 </style>
