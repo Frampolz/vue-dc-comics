@@ -120,10 +120,10 @@ export default {
   flex-wrap: wrap;
   gap: 2em;
   margin: 2em 0;
+  align-items: flex-start;
 
   .card-thumbs {
     flex-basis: calc((100% / 6) - 2em);
-
   }
   .button {
     margin: 0 auto;
