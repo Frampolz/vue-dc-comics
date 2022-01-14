@@ -4,6 +4,9 @@
       <div class="jumbotron d-flex">
          <p>content goes here</p>
       </div>
+      
+          <Cardmain />
+      
   </div>
   <div class="main-link">
       <ul class="d-flex">
@@ -38,8 +41,13 @@
 </template>
 
 <script>
-export default {
+import Cardmain from './Cardmain.vue';
 
+export default {
+components: {
+    Cardmain
+
+}
 }
 </script>
 
@@ -53,6 +61,7 @@ main {
             color: white;
             font-size: 2em;
         }
+        
         .main-link {
             background-color: $blueColor;
             ul {
