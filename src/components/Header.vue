@@ -45,20 +45,18 @@ ul {
     li {
         display: inline-block;
         padding: 1em;
-        &:hover,
-        &:active,
-        &.active {
-            border-bottom: 2px solid $blueColor;
-        }
 
-        
         a {
             text-decoration: none;
-            
+            padding: 3.8em 0;
+            color: $headerLiColor;
+            font-weight: bold;
+            font-size: 0.9em;
             &:hover,
             &:active,
             &.active {
                 color: $blueColor;
+                border-bottom: 5px solid $blueColor;
             }
         }
     }

@@ -28,7 +28,7 @@
             </a>
             </li>
           <li><a href="">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">   
+              <img src="../assets/img/buy-dc-power-visa.svg" alt="">   
               <p>dc power visa</p>       
             </a>
             </li>
@@ -47,8 +47,7 @@ export default {
 @import "../assets/scss/partials/_variables.scss";
 main {
     background-color: $mainBgColor;
-    .container {
-        }
+
         .jumbotron {
             padding: 1.5em;
             color: white;
@@ -62,7 +61,7 @@ main {
             
              li {
                 display: inline-block;
-                padding: 3em 2em;
+                padding: 3em 3.5em;
 
                 a {
                     display: flex;
