@@ -14,10 +14,15 @@
 export default {
     name: "Card",
     props:{
-      src: string,
-      alt: string,
-      titolo: string
+      src: String,
+      alt: String,
+      titolo: String
       
+    },
+    data() {
+      return {
+
+      }
     }
 }
 </script>
