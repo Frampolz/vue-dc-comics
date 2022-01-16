@@ -1,20 +1,19 @@
 <template>
   <div class="card-container d-flex">
-      <Card
-        v-for="(card, index) in cards"
-        :key="index"
-        :src="card.thumb"
-        :alt="card.series"
-        :titolo="card.series"
-      />
-    
+    <Card
+      v-for="(card, index) in cards"
+      :key="index"
+      :src="card.thumb"
+      :alt="card.series"
+      :titolo="card.series"
+    />
+
     <div class="button"><a href="#">load more</a></div>
   </div>
 </template>
 
 <script>
 import Card from "./Card.vue";
-
 
 export default {
   name: "Cardmain",
@@ -118,9 +117,10 @@ export default {
 @import "../assets/scss/partials/_variables.scss";
 .card-container {
   flex-wrap: wrap;
-  gap: 2em;
-  margin: 2em 0;
   align-items: flex-start;
+  gap: 2em;
+  margin: 4em 0;
+  padding: 0.6em;
 
   .card-thumbs {
     flex-basis: calc((100% / 6) - 2em);
